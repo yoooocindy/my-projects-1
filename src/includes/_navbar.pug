@@ -1,0 +1,50 @@
+nav.l-navbar
+  a.l-navbar__logo-mask(href="index.html")
+    img(src="img/logo/navbar-logo.jpg", alt="MUJI 無印良品 logo") 
+
+  //- 不使用 JS 的方式
+  //- input#burger-ctrl.l-navbar__burger-ctrl(type="checkbox" hidden)
+  //- label.o-burger.l-navbar__burger(for="burger-ctrl")
+  //-   .o-burger__wrap
+  //-     .o-burger__line
+  //-     .o-burger__line
+  //-     .o-burger__line
+
+  .o-burger.l-navbar__burger.--desk(onclick="burgerCtrl(this)")
+    .o-burger__wrap
+      .o-burger__line
+      .o-burger__line
+      .o-burger__line
+  
+  .l-navbar__body
+    .l-navbar__menu 
+      ul.l-navbar__btn-box 
+        li.l-navbar__btn-wrap 
+          a.l-navbar__btn(href="#activity" onclick="lenis.scrollTo('#activity')")
+            span.u-ff-primary.u-text-lg 活動特集
+        li.l-navbar__btn-wrap 
+          a.l-navbar__btn(href="#product" onclick="lenis.scrollTo('#product')")
+            span.u-ff-primary.u-text-lg 產品專區
+        li.l-navbar__btn-wrap 
+          a.l-navbar__btn(href="#life" onclick="lenis.scrollTo('#life')")
+            span.u-ff-primary.u-text-lg 生活提案
+        li.l-navbar__btn-wrap 
+          a.l-navbar__btn(href="#serve" onclick="lenis.scrollTo('#serve')")
+            span.u-ff-primary.u-text-lg 良品服務
+            
+      ul.l-navbar__btn-box.--icon
+        li.l-navbar__btn-wrap
+          a.l-navbar__btn(href="https://www.facebook.com/muji.tw")   
+            i.fa-brands.fa-facebook.fa-xl.u-icon
+        li.l-navbar__btn-wrap
+          a.l-navbar__btn(href="https://www.instagram.com/muji_taiwan/") 
+            i.fa-brands.fa-instagram.fa-xl.u-icon
+        li.l-navbar__btn-wrap
+          a.l-navbar__btn(href="https://page.line.me/mujitaiwan?openQrModal=true")   
+            i.fa-brands.fa-line.fa-xl.u-icon
+
+  .o-burger.l-navbar__burger.--mobile(onclick="burgerCtrl(this)")
+    .o-burger__wrap
+      .o-burger__line
+      .o-burger__line
+      .o-burger__line   

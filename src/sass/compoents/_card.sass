@@ -1,0 +1,22 @@
+.c-card
+  &:hover &
+    &__img-mask
+      opacity: 0.7
+    &__title
+      border: 1px solid var(--color-primary)
+      color: var(--color-primary)
+  &__content
+    display: flex
+    justify-content: center  
+      
+  &__img-mask
+    --img-w-ratio: 16
+    --img-h-ratio: 9
+    padding-bottom: calc(100% * var(--img-h-ratio) / var(--img-w-ratio))
+    transition: all 0.3s
+  &__title
+    margin-top: var(--space-10)
+    border: 1px solid transparent
+    text-align: center
+    transition: all 0.3s
+  

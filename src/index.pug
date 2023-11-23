@@ -1,0 +1,251 @@
+doctype html
+html(lang="en")
+  head
+    include includes/_config.pug
+    include includes/_head.pug
+    meta(property="og:url" content=baseUrl)
+    meta(property="og:image" content=`${baseUrl}/img/og/og.jpg`)
+    meta(property="og:description" content="description")
+    //- 網頁描述
+    meta(name="description" content="description")
+    meta(property="og:title" content="title")
+    title #{title}
+
+  body 
+    include includes/_navbar.pug   
+
+    header.l-header(data-aos="fade-up" data-aos-offset="0")
+      .swiper.l-header__swiper 
+          .swiper-wrapper 
+            .swiper-slide
+              .l-header__img-mask 
+                img.u-object-fit(src="img/banner/banner01.png" alt="新生活")
+            .swiper-slide 
+               .l-header__img-mask 
+                img.u-object-fit(src="img/banner/banner02.png" alt="MUJI WALKER")
+            .swiper-slide 
+              .l-header__img-mask
+                img.u-object-fit(src="img/banner/banner03.png" alt="gogoro全新聯名")
+
+    main.l-main
+      section.l-activity(data-aos="fade-up" data-aos-offset="0")#activity
+        .container 
+          .u-title.u-text-center
+            .u-mb-30  
+              h2 活動特集
+          .row 
+            .col-md-4
+              a.c-card(href="##")
+                .c-card__img-mask 
+                  img.u-object-fit.--abs.js-lazy(data-src="img/banner/banner02.png", alt="MUJI WALKER")
+                h3.c-card__title.u-text-sm MUJI  WALKER
+            .col-md-4
+              a.c-card(href="##")
+                .c-card__img-mask 
+                  img.u-object-fit.--abs.js-lazy(data-src="img/activity/MUJI to GO.png", alt="MUJI to GO")
+                h3.c-card__title.u-text-sm MUJI to GO 旅行用品
+            .col-md-4
+              a.c-card(href="##")
+                .c-card__img-mask 
+                  img.u-object-fit.--abs.js-lazy(data-src="img/banner/banner03.png", alt="gogoro全新聯名")
+                h3.c-card__title.u-text-sm GOGORO X MUJI 全新聯名
+          .o-btn.--right
+            a.o-btn__link(href="活動特集.html")
+              span.o-btn__text 顯示更多
+              i.fa-regular.fa-circle-right
+      
+      section.l-product(data-aos="fade-up" data-aos-offset="0")#product 
+        .container 
+          .u-title.u-text-center
+            .u-mb-30  
+              h2 產品專區
+          .row 
+            .col-md-3
+              .c-product-btn
+                ul.c-product-btn__list
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/woman.png") 女裝 
+                    a.c-product-btn__link(href="##") 
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/man.png") 男裝 
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/underwear.png") 內衣 
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/shoes.png") 鞋子 
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/bag.png") 包包/配件
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/child.png") 童裝
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/labo.png") MUJI Labo
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/walker.png") MUJI WALKER
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/sofa.png") 家具
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/storage.png") 收納用品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon 
+            .col-md-3
+              .c-product-btn
+                ul.c-product-btn__list
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/bed.png") 織品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/clock.png") 家電
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/write.png") 文具
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/care product.png") 美容保養
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/suitcase.png") 旅行用品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/pot.png") 餐具/廚房用品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/towel.png") 毛巾/衛浴用品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/clean.png") 清掃/洗滌用品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/food.png") 食品
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+                  li.c-product-btn__item
+                    span.c-product-btn__text(data-img="img/product/market.png") 良品市場
+                    a.c-product-btn__link(href="##")
+                      i.fa-solid.fa-circle-chevron-right.c-icon
+
+            .col-md-6
+              .l-product__img-mask
+                img.u-object-fit.l-product__img(src="img/product/bag.png", alt="織品")
+          
+
+      section.l-life(data-aos="fade-up" data-aos-offset="0")#life  
+        .container 
+          .u-title.u-text-center
+            .u-mb-30  
+              h2 生活提案  
+          .row 
+            .col-md-4
+              article.c-life-card
+                a.c-life-card__wrap(href="##")
+                  .c-life-card__img-mask
+                    img.c-life-card__img.u-object-fit.--abs.js-lazy(data-src="img/life/life-01.png", alt="穿搭圖輯")
+                    h3.c-life-card__img-title 穿搭圖輯
+                  h3.c-life-card__title.u-text-sm.--center.u-mt-10.u-pb-10 穿搭圖輯 
+            .col-md-4
+              article.c-life-card
+                a.c-life-card__wrap(href="##")
+                  .c-life-card__img-mask
+                    img.c-life-card__img.u-object-fit.--abs.js-lazy(data-src="img/life/life-02.png", alt="生活案例")
+                    h3.c-life-card__img-title 生活案例
+                  h3.c-life-card__title.u-text-sm.--center.u-mt-10.u-pb-10 生活案例 
+            .col-md-4
+              article.c-life-card
+                a.c-life-card__wrap(href="##")
+                  .c-life-card__img-mask
+                    img.c-life-card__img.u-object-fit.--abs.js-lazy(data-src="img/life/life-03.png", alt="創意料理")
+                    h3.c-life-card__img-title 創意料理
+                  h3.c-life-card__title.u-text-sm.--center.u-mt-10.u-pb-10 創意料理  
+          .o-btn.--right
+            a.o-btn__link(href="生活提案.html")
+              span.o-btn__text 顯示更多
+              i.fa-regular.fa-circle-right
+
+      section.--full.l-serve(data-aos="fade-up" data-aos-offset="0")#serve   
+        .u-title.u-text-center
+          .u-mb-30  
+            h2 良品服務
+        .row.g-0
+          .col-md-6 
+            article.c-serve-card
+              a.c-serve-card__link(href="##")
+                .c-serve-card__img-mask
+                  img.c-serve-card__img.u-object-fit.--abs.js-lazy(data-src="img/serve/serve01.PNG", alt="良品服務")
+                  p.c-serve-card__title 良品服務
+          .col-md-6
+            article.c-serve-card
+              a.c-serve-card__link(href="##")
+                .c-serve-card__img-mask
+                  img.c-serve-card__img.u-object-fit.--abs.js-lazy(data-src="img/serve/serve02.PNG", alt="門市服務")
+                  p.c-serve-card__title 門市服務
+          .col-md-6 
+            article.c-serve-card
+              a.c-serve-card__link(href="##")
+                .c-serve-card__img-mask
+                  img.c-serve-card__img.u-object-fit.--abs.js-lazy(data-src="img/serve/serve03.PNG", alt="顧客服務")
+                  p.c-serve-card__title 顧客服務
+          .col-md-6
+            article.c-serve-card
+              a.c-serve-card__link(href="##")
+                .c-serve-card__img-mask
+                  img.c-serve-card__img.u-object-fit.--abs.js-lazy(data-src="img/serve/serve04.PNG", alt="空間改造企劃服務")
+                  p.c-serve-card__title 空間改造企劃服務          
+              
+    include includes/_footer.pug
+               
+            
+
+ 
+
+
+
+
+
+    
+
+    script(src="js/swiper-bundle.min.js")
+    script.
+      const mySwiper = new Swiper('.swiper', {
+        autoplay: true, //可選選項，自動滑動
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          // false => 用手托動換頁之後，還是會持續 autoplay
+          disableOnInteraction: false,
+        }
+      })
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous")
+    script(src="js/aos.js")
+    script.
+      // 想讓這個插件及時，所以寫在這初始化
+      AOS.init({
+        offset: 200,
+        duration: 1200,
+        once: false
+      });
+    script(src="js/lazyload.min.js")
+    script(src="js/lenis.min.js")
+    script(src="js/main.min.js")

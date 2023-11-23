@@ -1,0 +1,80 @@
+.l-navbar
+  display: flex
+  justify-content: space-between
+  position: sticky
+  position: -webkit-sticky
+  top: 0
+  width: 100%
+  background-color: #fff
+  padding-left: 5vw
+  padding-right: 4vw 
+  align-items: center
+  z-index: 999
+  &__logo-mask
+    max-width: 12rem
+  &__burger
+    display: none
+  &__menu
+    display: flex
+    // margin-left: auto
+    align-items: center
+  &__btn-box
+    display: flex
+  &__btn-box.--icon &
+    &__btn-wrap
+      padding-right: 2vw
+      padding-left: 2vw
+  &__btn-wrap
+    padding: var(--space-30) 3vw
+    color: var(--color-primary) 
+
+  &__btn-wrap & 
+    &__btn
+      &:hover
+        color: var(--color-black)
+  
+  +media(xl)
+    &__burger
+      display: block
+    &__burger.is-opened &
+      &__menu
+        transform: translateY(0)
+        opacity: 1
+        transition-delay: 0.7s
+    &__body
+      position: fixed
+      left: 0
+      top: 0
+      +size(100%, 0)
+      overflow: hidden
+      // 關起來時 delay 0.7s
+      // 屬性 duration delay
+      transition: height 0.7s 
+      &.is-opened
+        height: 100%
+        // overflow: auto
+        // 打開時直接打開，不要 delay
+        transition-delay: 0s
+    // menu 好好調他的樣式
+    &__menu
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      min-height: 100%
+      width: 100%
+      padding: var(--space-60) 0
+    &__btn-box.--icon
+      margin-top: var(--space-40)
+    &__logo-mask
+      margin-top: var(--space-30)
+  
+  +media(sm)
+    &__btn-box:not(.--icon)
+      flex-direction: column
+    &__btn-wrap
+      padding: var(--space-20) 4vw !important
+    //!important 表示最重要，層級最高，可以蓋掉之前的設定
+
+
+
+
