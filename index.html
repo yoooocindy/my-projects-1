@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="img/logo/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:url" content="##">
+    <meta property="og:image" content="##/img/og/og.jpg">
+    <meta property="og:description" content="description">
+    <meta name="description" content="description">
+    <meta property="og:title" content="title">
+    <title>（專案實作）MUJI無印良品</title>
+  </head>
+  <body> 
+    <nav class="l-navbar"><a class="l-navbar__logo-mask" href="index.html"><img src="img/logo/navbar-logo.jpg" alt="MUJI 無印良品 logo"></a>
+      <div class="o-burger l-navbar__burger --desk" onclick="burgerCtrl(this)">
+        <div class="o-burger__wrap">
+          <div class="o-burger__line"></div>
+          <div class="o-burger__line"></div>
+          <div class="o-burger__line"></div>
+        </div>
+      </div>
+      <div class="l-navbar__body">
+        <div class="l-navbar__menu"> 
+          <ul class="l-navbar__btn-box"> 
+            <li class="l-navbar__btn-wrap"> <a class="l-navbar__btn" href="#activity" onclick="lenis.scrollTo('#activity')"><span class="u-ff-primary u-text-lg">活動特集</span></a></li>
+            <li class="l-navbar__btn-wrap"> <a class="l-navbar__btn" href="#product" onclick="lenis.scrollTo('#product')"><span class="u-ff-primary u-text-lg">產品專區</span></a></li>
+            <li class="l-navbar__btn-wrap"> <a class="l-navbar__btn" href="#life" onclick="lenis.scrollTo('#life')"><span class="u-ff-primary u-text-lg">生活提案</span></a></li>
+            <li class="l-navbar__btn-wrap"> <a class="l-navbar__btn" href="#serve" onclick="lenis.scrollTo('#serve')"><span class="u-ff-primary u-text-lg">良品服務</span></a></li>
+          </ul>
+          <ul class="l-navbar__btn-box --icon">
+            <li class="l-navbar__btn-wrap"><a class="l-navbar__btn" href="https://www.facebook.com/muji.tw">  <i class="fa-brands fa-facebook fa-xl u-icon"></i></a></li>
+            <li class="l-navbar__btn-wrap"><a class="l-navbar__btn" href="https://www.instagram.com/muji_taiwan/"> <i class="fa-brands fa-instagram fa-xl u-icon"></i></a></li>
+            <li class="l-navbar__btn-wrap"><a class="l-navbar__btn" href="https://page.line.me/mujitaiwan?openQrModal=true">  <i class="fa-brands fa-line fa-xl u-icon"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="o-burger l-navbar__burger --mobile" onclick="burgerCtrl(this)">
+        <div class="o-burger__wrap">
+          <div class="o-burger__line"></div>
+          <div class="o-burger__line"></div>
+          <div class="o-burger__line">  </div>
+        </div>
+      </div>
+    </nav>
+    <header class="l-header" data-aos="fade-up" data-aos-offset="0">
+      <div class="swiper l-header__swiper"> 
+        <div class="swiper-wrapper"> 
+          <div class="swiper-slide">
+            <div class="l-header__img-mask"> <img class="u-object-fit" src="img/banner/banner01.png" alt="新生活"></div>
+          </div>
+          <div class="swiper-slide"> 
+            <div class="l-header__img-mask"> <img class="u-object-fit" src="img/banner/banner02.png" alt="MUJI WALKER"></div>
+          </div>
+          <div class="swiper-slide"> 
+            <div class="l-header__img-mask"><img class="u-object-fit" src="img/banner/banner03.png" alt="gogoro全新聯名"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="l-main">
+      <section class="l-activity" data-aos="fade-up" data-aos-offset="0" id="activity">
+        <div class="container"> 
+          <div class="u-title u-text-center">
+            <div class="u-mb-30"> 
+              <h2>活動特集</h2>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-4"><a class="c-card" href="##">
+                <div class="c-card__img-mask"> <img class="u-object-fit --abs js-lazy" data-src="img/banner/banner02.png" alt="MUJI WALKER"></div>
+                <h3 class="c-card__title u-text-sm">MUJI  WALKER</h3></a></div>
+            <div class="col-md-4"><a class="c-card" href="##">
+                <div class="c-card__img-mask"> <img class="u-object-fit --abs js-lazy" data-src="img/activity/MUJI to GO.png" alt="MUJI to GO"></div>
+                <h3 class="c-card__title u-text-sm">MUJI to GO 旅行用品</h3></a></div>
+            <div class="col-md-4"><a class="c-card" href="##">
+                <div class="c-card__img-mask"> <img class="u-object-fit --abs js-lazy" data-src="img/banner/banner03.png" alt="gogoro全新聯名"></div>
+                <h3 class="c-card__title u-text-sm">GOGORO X MUJI 全新聯名</h3></a></div>
+          </div>
+          <div class="o-btn --right"><a class="o-btn__link" href="活動特集.html"><span class="o-btn__text">顯示更多</span><i class="fa-regular fa-circle-right"></i></a></div>
+        </div>
+      </section>
+      <section class="l-product" data-aos="fade-up" data-aos-offset="0" id="product"> 
+        <div class="container"> 
+          <div class="u-title u-text-center">
+            <div class="u-mb-30"> 
+              <h2>產品專區</h2>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-3">
+              <div class="c-product-btn">
+                <ul class="c-product-btn__list">
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/woman.png">女裝 </span><a class="c-product-btn__link" href="##"> <i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/man.png">男裝 </span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/underwear.png">內衣 </span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/shoes.png">鞋子 </span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/bag.png">包包/配件</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/child.png">童裝</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/labo.png">MUJI Labo</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/walker.png">MUJI WALKER</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/sofa.png">家具</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/storage.png">收納用品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"> </i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="c-product-btn">
+                <ul class="c-product-btn__list">
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/bed.png">織品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/clock.png">家電</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/write.png">文具</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/care product.png">美容保養</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/suitcase.png">旅行用品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/pot.png">餐具/廚房用品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/towel.png">毛巾/衛浴用品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/clean.png">清掃/洗滌用品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/food.png">食品</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                  <li class="c-product-btn__item"><span class="c-product-btn__text" data-img="img/product/market.png">良品市場</span><a class="c-product-btn__link" href="##"><i class="fa-solid fa-circle-chevron-right c-icon"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="l-product__img-mask"><img class="u-object-fit l-product__img" src="img/product/bag.png" alt="織品"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-life" data-aos="fade-up" data-aos-offset="0" id="life"> 
+        <div class="container"> 
+          <div class="u-title u-text-center">
+            <div class="u-mb-30"> 
+              <h2>生活提案  </h2>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-4">
+              <article class="c-life-card"><a class="c-life-card__wrap" href="##">
+                  <div class="c-life-card__img-mask"><img class="c-life-card__img u-object-fit --abs js-lazy" data-src="img/life/life-01.png" alt="穿搭圖輯">
+                    <h3 class="c-life-card__img-title">穿搭圖輯</h3>
+                  </div>
+                  <h3 class="c-life-card__title u-text-sm --center u-mt-10 u-pb-10">穿搭圖輯 </h3></a></article>
+            </div>
+            <div class="col-md-4">
+              <article class="c-life-card"><a class="c-life-card__wrap" href="##">
+                  <div class="c-life-card__img-mask"><img class="c-life-card__img u-object-fit --abs js-lazy" data-src="img/life/life-02.png" alt="生活案例">
+                    <h3 class="c-life-card__img-title">生活案例</h3>
+                  </div>
+                  <h3 class="c-life-card__title u-text-sm --center u-mt-10 u-pb-10">生活案例 </h3></a></article>
+            </div>
+            <div class="col-md-4">
+              <article class="c-life-card"><a class="c-life-card__wrap" href="##">
+                  <div class="c-life-card__img-mask"><img class="c-life-card__img u-object-fit --abs js-lazy" data-src="img/life/life-03.png" alt="創意料理">
+                    <h3 class="c-life-card__img-title">創意料理</h3>
+                  </div>
+                  <h3 class="c-life-card__title u-text-sm --center u-mt-10 u-pb-10">創意料理  </h3></a></article>
+            </div>
+          </div>
+          <div class="o-btn --right"><a class="o-btn__link" href="生活提案.html"><span class="o-btn__text">顯示更多</span><i class="fa-regular fa-circle-right"></i></a></div>
+        </div>
+      </section>
+      <section class="--full l-serve" data-aos="fade-up" data-aos-offset="0" id="serve">  
+        <div class="u-title u-text-center">
+          <div class="u-mb-30"> 
+            <h2>良品服務</h2>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-md-6"> 
+            <article class="c-serve-card"><a class="c-serve-card__link" href="##">
+                <div class="c-serve-card__img-mask"><img class="c-serve-card__img u-object-fit --abs js-lazy" data-src="img/serve/serve01.PNG" alt="良品服務">
+                  <p class="c-serve-card__title">良品服務</p>
+                </div></a></article>
+          </div>
+          <div class="col-md-6">
+            <article class="c-serve-card"><a class="c-serve-card__link" href="##">
+                <div class="c-serve-card__img-mask"><img class="c-serve-card__img u-object-fit --abs js-lazy" data-src="img/serve/serve02.PNG" alt="門市服務">
+                  <p class="c-serve-card__title">門市服務</p>
+                </div></a></article>
+          </div>
+          <div class="col-md-6"> 
+            <article class="c-serve-card"><a class="c-serve-card__link" href="##">
+                <div class="c-serve-card__img-mask"><img class="c-serve-card__img u-object-fit --abs js-lazy" data-src="img/serve/serve03.PNG" alt="顧客服務">
+                  <p class="c-serve-card__title">顧客服務</p>
+                </div></a></article>
+          </div>
+          <div class="col-md-6">
+            <article class="c-serve-card"><a class="c-serve-card__link" href="##">
+                <div class="c-serve-card__img-mask"><img class="c-serve-card__img u-object-fit --abs js-lazy" data-src="img/serve/serve04.PNG" alt="空間改造企劃服務">
+                  <p class="c-serve-card__title">空間改造企劃服務          </p>
+                </div></a></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer u-mt-120" data-aos="fade-up" data-aos-offset="0"><a class="l-footer__logo-mask" href="#"><img class="l-footer__img" src="img/logo/navbar-logo.jpg" alt="MUJI無印良品LOGO"></a>
+      <div class="l-footer__body">
+        <div class="l-footer__menu">
+          <ul class="l-footer__btn-list">
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">店鋪情報 </a></li>
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">展店合作</a></li>
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">良品生活研究所</a></li>
+          </ul>
+          <ul class="l-footer__btn-list">
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">仿冒品提醒聲明 </a></li>
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">人才招募 </a></li>
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">企業情報</a></li>
+          </ul>
+          <ul class="l-footer__btn-list"> 
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">博客來網路門市</a></li>
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">momo網路購物門市</a></li>
+            <li class="l-footer__btn-item"><a class="l-footer__btn" href="##">PChome24h購物</a></li>
+          </ul>
+        </div><span class="u-mt-40 u-text-xs u-text-center">Copyright ©Ryohin Keikaku Co., Ltd.</span>
+      </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      const mySwiper = new Swiper('.swiper', {
+        autoplay: true, //可選選項，自動滑動
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          // false => 用手托動換頁之後，還是會持續 autoplay
+          disableOnInteraction: false,
+        }
+      })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      // 想讓這個插件及時，所以寫在這初始化
+      AOS.init({
+        offset: 200,
+        duration: 1200,
+        once: false
+      });
+    </script>
+    <script src="js/lazyload.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
